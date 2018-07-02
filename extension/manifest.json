@@ -1,0 +1,25 @@
+{
+  
+  "manifest_version": 2,
+  "name": "Youtube-Discord",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js":["jquery-3.3.1.min.js","script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["jquery-3.3.1.min.js","background.js"]
+  },
+  "permissions": [
+      "tabs",
+      "webNavigation",
+      "https://youtubediscordextension.herokuapp.com/*",
+      "http://localhost:3000/*",
+      "storage"
+  ]
+}
