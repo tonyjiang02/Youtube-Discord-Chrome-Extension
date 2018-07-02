@@ -1,1 +1,1 @@
-# Discord-Youtube-chromextension
+# Discord Youtube Chrome Extension
